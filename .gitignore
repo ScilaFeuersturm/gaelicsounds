@@ -8,6 +8,3 @@ env/
 
 # macOS
 .DS_Store
-
-# Audio cache (se conserva el directorio con .gitkeep)
-audio_cache/*.wav

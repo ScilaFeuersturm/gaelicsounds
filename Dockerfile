@@ -16,9 +16,10 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app ./app
+COPY scripts ./scripts
 COPY Listados-audio-Soltura ./Listados-audio-Soltura
 COPY phrases.json ./phrases.json
-RUN mkdir -p /app/audio_cache
+COPY audio_cache ./audio_cache
 
 EXPOSE 8000
 

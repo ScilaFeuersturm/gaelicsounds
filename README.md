@@ -1,159 +1,107 @@
 # gaelicsounds
 
-Microservicio de síntesis de voz (**Text-to-Speech**) para **Soltura**, construido con **Python (FastAPI)** y los modelos neuronales **Meta MMS** (`facebook/mms-tts-gla` y `facebook/mms-tts-cym`), listo para desplegarse en **Render** con caché persistente en disco.
+Servicio de síntesis y provisión de audios para **Soltura**, diseñado con una estrategia separada por idioma para cuidar la **licencia comercial** y el **presupuesto**:
 
-## Idiomas soportados
-
-| Idioma | Código | Locale | Modelo Meta MMS | Textos en Manifest |
-| :--- | :--- | :--- | :--- | :--- |
-| **Gaélico escocés** (*Gàidhlig*) | `gd` (default) | `gd-GB` | `facebook/mms-tts-gla` | 80 (72 principales + 8 complementarios) |
-| **Galés** (*Cymraeg*) | `cy` | `cy-GB` | `facebook/mms-tts-cym` | 78 (70 principales + 8 complementarios) |
-
-* **Consumo de memoria mínimo:** Carga como máximo un único checkpoint en RAM a la vez (~250 MB).
-* **Caché en disco (`audio_cache/`):** Cada frase se sintetiza una sola vez y se guarda con su **ID estable de Soltura** (por ejemplo, `gd-13e686b645a2570e.wav` o `cy-ec43e481f8caaa20.wav`). Las siguientes peticiones se sirven directamente desde disco en milisegundos sin correr inferencia.
+| Idioma | Código | Motor / Estrategia | Voces | Licencia | Estado |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Galés** (*Cymraeg*) | `cy` (`cy-GB`) | **Microsoft Azure Speech** (generación única + caché) | `cy-GB-NiaNeural` (Nia) / `cy-GB-AledNeural` (Aled) | **Comercial permitida** (Azure Paid Tier) | Listo para producción (78 textos) |
+| **Gaélico escocés** (*Gàidhlig*) | `gd` (`gd-GB`) | **Archivos aprobados en `audio_cache/`** (profe / Ceitidh) + **Meta MMS** (`facebook/mms-tts-gla`) solo para borrador | Grabación docente / Ceitidh / MMS (draft) | **MMS es CC-BY-NC 4.0 (No comercial)** | En revisión docente (80 textos) |
 
 ---
 
-## Estructura del Proyecto
+## Trazabilidad de Proveedor, Voz y Licencia (`.meta.json`)
 
-```text
-.
-├── app/
-│   ├── __init__.py
-│   ├── main.py                  # Endpoints FastAPI + CORS
-│   └── tts_engine.py            # Motor TTS Meta MMS + caché + lectura de manifests
-├── Listados-Audio-soltura/      # Listados y manifests oficiales de Soltura (A1 y A2)
-│   ├── LEEME.md
-│   ├── gaelico-escoces-gd/
-│   │   ├── 01-textos-necesarios.txt
-│   │   ├── 02-practicas-complementarias.txt
-│   │   ├── listado-con-contexto.csv
-│   │   └── manifest-audios.json
-│   └── gales-cy/
-│       ├── 01-textos-necesarios.txt
-│       ├── 02-practicas-complementarias.txt
-│       ├── listado-con-contexto.csv
-│       └── manifest-audios.json
-├── audio_cache/                 # Directorio local o Persistent Disk en Render
-├── phrases.json                 # Los 158 textos consolidados (gd + cy)
-├── Dockerfile
-├── render.yaml                  # Blueprint para Render
-└── requirements.txt
-```
+Siguiendo los criterios de `Listados-audio-Soltura/LEEME.md`, cada vez que se genera o aloja un audio en `audio_cache/{id}.wav`, el servicio guarda automáticamente un archivo `audio_cache/{id}.meta.json` (y lo expone en `GET /manifest` y en los headers HTTP `X-TTS-*`) con:
 
----
-
-## Cómo usar el Backend (Endpoints)
-
-Una vez levantado el servicio (por ejemplo en `http://localhost:8000` o `https://scottish-gaelic-tts.onrender.com`), tenés disponibles los siguientes endpoints:
-
-### 1. Obtener audio por ID de Soltura (`GET /audio/{id}`)
-Ideal para usar directamente en etiquetas `<audio>` o `new Audio()` desde el frontend de Soltura. Acepta el ID con o sin extensión `.wav`. Si el audio ya está en disco lo devuelve al instante; si no, lo genera y lo guarda en caché automáticamente.
-
-```html
-<!-- Gaélico escocés: "Gàidhlig" -->
-<audio src="https://tu-servicio.onrender.com/audio/gd-13e686b645a2570e.wav" controls></audio>
-
-<!-- Galés: "Cymru" -->
-<audio src="https://tu-servicio.onrender.com/audio/cy-ec43e481f8caaa20.wav" controls></audio>
-```
-
-Ejemplo desde JavaScript / TypeScript en Soltura:
-```ts
-const API_BASE = "https://tu-servicio.onrender.com";
-
-export function playSolturaAudio(audioId: string) {
-  const audio = new Audio(`${API_BASE}/audio/${audioId}.wav`);
-  return audio.play();
+```json
+{
+  "id": "cy-ec43e481f8caaa20",
+  "language": "cy",
+  "locale": "cy-GB",
+  "text": "Cymru",
+  "provider": "azure-speech",
+  "voice": "cy-GB-NiaNeural",
+  "license": "Microsoft Azure Commercial",
+  "commercialUseAllowed": true,
+  "version": "1.0",
+  "generatedAt": "2026-11-17T13:55:00+00:00"
 }
 ```
 
 ---
 
-### 2. Sintetizar por texto (`GET /synthesize` y `POST /synthesize`)
-Si querés pedir un audio pasando el texto directamente:
+## Cómo generar los 78 audios de Galés (`cy`) una sola vez con Azure
 
-* **Vía `GET`:**
-  ```text
-  GET /synthesize?text=Madainn%20mhath&language=gd
-  GET /synthesize?text=Bore%20da&language=cy
-  ```
+Podés generar los 78 archivos `.wav` de Galés una única vez y dejarlos guardados en `audio_cache/` (incluso commiteados al repositorio para que en el plan **Free** de Render nunca se borren ni consuman cuota adicional):
 
-* **Vía `POST`:**
-  ```bash
-  curl -X POST "https://tu-servicio.onrender.com/synthesize" \
-       -H "Content-Type: application/json" \
-       -d '{"text": "Madainn mhath", "language": "gd"}' \
-       --output madainn_mhath.wav
-  ```
-  *(Si `language` se omite, usa `"gd"` por defecto).*
-
----
-
-### 3. Precargar todos los audios en lote (`POST /batch-preload`)
-Ideal para ejecutar una sola vez después del despliegue para que los 158 audios queden generados en el disco persistente:
-
-* **Precargar todo el manifest integrado automáticamente (sin necesidad de adjuntar archivo):**
-  ```bash
-  curl -X POST "https://tu-servicio.onrender.com/batch-preload"
-  ```
-
-* **Precargar filtrando por idioma o prioridad (`1` = principales, `2` = complementarios):**
-  ```bash
-  # Solo Gaélico escocés (textos principales)
-  curl -X POST "https://tu-servicio.onrender.com/batch-preload?language=gd&priority=1"
-
-  # Solo Galés (textos principales)
-  curl -X POST "https://tu-servicio.onrender.com/batch-preload?language=cy&priority=1"
-  ```
-
-* **O enviando un archivo JSON propio (`phrases.json`):**
-  ```bash
-  curl -X POST "https://tu-servicio.onrender.com/batch-preload" \
-       -H "Content-Type: application/json" \
-       -d @phrases.json
-  ```
-
----
-
-### 4. Consultar el catálogo y estado de caché (`GET /manifest`)
-Devuelve el listado de frases de Soltura indicando si cada audio ya está generado en caché (`cached: true/false`), el modelo utilizado y su `audioUrl`:
-
+### Opción A: Script local (`scripts/generate_azure_welsh.py`)
 ```bash
-curl "https://tu-servicio.onrender.com/manifest?language=gd"
+export AZURE_SPEECH_KEY="tu_clave_de_azure"
+export AZURE_SPEECH_REGION="eastus"
+
+# Generar con la voz femenina Nia (por defecto) o masculina Aled (--voice cy-GB-AledNeural)
+python3 scripts/generate_azure_welsh.py --voice cy-GB-NiaNeural
+```
+Luego podés subir los `.wav` y `.meta.json` generados en `audio_cache/` a GitHub para que queden permanentes en Render Free.
+
+### Opción B: Desde el endpoint `/batch-preload` en Render
+Configurá `AZURE_SPEECH_KEY` y `AZURE_SPEECH_REGION` en la pestaña **Environment** de Render y ejecutá:
+```bash
+# Generar los 70 textos principales de Galés con Nia
+curl -X POST "https://gaelicsounds.onrender.com/batch-preload?language=cy&priority=1&voice=cy-GB-NiaNeural"
 ```
 
-### 5. Health Check (`GET /health`)
-```bash
-curl "https://tu-servicio.onrender.com/health"
+---
+
+## Cómo usar los Audios de Gaélico Escocés (`gd`)
+
+* **Mientras está en revisión docente (uso interno no comercial):**
+  El servicio puede sintetizar borradores con `facebook/mms-tts-gla` marcándolos explícitamente con `"commercialUseAllowed": false` y `"license": "CC-BY-NC-4.0"`.
+* **Cuando tengan las grabaciones de la docente o Ceitidh:**
+  Basta con guardar los archivos `.wav` en `audio_cache/` usando el ID estable del manifest (por ejemplo `audio_cache/gd-13e686b645a2570e.wav`). El backend detecta automáticamente que el archivo ya existe en `audio_cache/` y lo sirve de inmediato sin invocar a Meta MMS.
+
+---
+
+## Cómo consumir el Backend desde Soltura
+
+URL en Render: **`https://gaelicsounds.onrender.com`**
+
+### 1. Reproducir por ID estable del manifest (`GET /audio/{id}.wav`)
+```html
+<!-- Galés (Azure Nia/Aled): "Cymru" -->
+<audio src="https://gaelicsounds.onrender.com/audio/cy-ec43e481f8caaa20.wav" controls></audio>
+
+<!-- Gaélico escocés: "Gàidhlig" -->
+<audio src="https://gaelicsounds.onrender.com/audio/gd-13e686b645a2570e.wav" controls></audio>
 ```
-Devuelve el estado del servicio, los idiomas soportados y cuántos ítems del manifest están cacheados en disco.
 
----
+Desde TypeScript / JavaScript en Soltura:
+```ts
+const AUDIO_API = "https://gaelicsounds.onrender.com";
 
-## Ejecución Local
+export function getSolturaAudioUrl(id: string): string {
+  return `${AUDIO_API}/audio/${id}.wav`;
+}
+```
 
-1. **Crear entorno virtual e instalar dependencias:**
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   pip install -r requirements.txt
-   ```
+### 2. Consultar el catálogo, estado de caché y licencias (`GET /manifest`)
+```bash
+# Ver estado y metadatos de Galés
+curl "https://gaelicsounds.onrender.com/manifest?language=cy"
 
-2. **Iniciar el servidor:**
-   ```bash
-   uvicorn app.main:app --reload --port 8000
-   ```
+# Ver estado y metadatos de Gaélico escocés
+curl "https://gaelicsounds.onrender.com/manifest?language=gd"
+```
 
-3. **Documentación interactiva (Swagger UI):**
-   Abrí `http://localhost:8000/docs` en tu navegador para probar todos los endpoints.
+### 3. Sintetizar por texto (`GET /synthesize` y `POST /synthesize`)
+```bash
+curl -X POST "https://gaelicsounds.onrender.com/synthesize" \
+     -H "Content-Type: application/json" \
+     -d '{"text": "Bore da", "language": "cy", "voice": "cy-GB-NiaNeural"}' \
+     --output bore_da.wav
+```
 
----
-
-## Despliegue en Render
-
-El repositorio incluye un archivo `render.yaml` (Blueprint) y un `Dockerfile` listos para Render:
-
-1. En el dashboard de [Render](https://dashboard.render.com/), seleccioná **New +** -> **Blueprint** (o **Web Service**) y conectá el repositorio `ScilaFeuersturm/gaelicsounds`.
-2. Render detectará automáticamente el entorno `docker`, el health check `/health` y el disco persistente montado en `/app/audio_cache`.
-3. Una vez finalizado el deploy, ejecutá `POST /batch-preload` para dejar todos los audios pregenerados en el disco persistente.
+### 4. Health Check y estado de configuración (`GET /health`)
+```bash
+curl "https://gaelicsounds.onrender.com/health"
+```

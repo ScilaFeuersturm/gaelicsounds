@@ -1,14 +1,17 @@
 services:
   - type: web
-    name: scottish-gaelic-tts
+    name: gaelicsounds
     env: docker
-    plan: starter
+    plan: free
     region: oregon
     healthCheckPath: /health
-    disk:
-      name: gaelic-audio-cache
-      mountPath: /app/audio_cache
-      sizeGB: 1
     envVars:
       - key: AUDIO_CACHE_DIR
         value: /app/audio_cache
+      - key: AZURE_WELSH_VOICE
+        value: cy-GB-NiaNeural
+      # Configurar en el panel de Render para Galés (Azure Speech):
+      # - key: AZURE_SPEECH_KEY
+      #   sync: false
+      # - key: AZURE_SPEECH_REGION
+      #   value: eastus

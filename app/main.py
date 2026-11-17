@@ -1,17 +1,24 @@
+import os
 from typing import List, Optional
 from fastapi import FastAPI, HTTPException, Query, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from app.tts_engine import LANGUAGE_MODELS, tts_engine
+from app.tts_engine import (
+    AZURE_WELSH_VOICES,
+    DEFAULT_AZURE_WELSH_VOICE,
+    MMS_MODELS,
+    tts_engine,
+)
 
 app = FastAPI(
-    title="Soltura Gaelic & Welsh TTS API",
+    title="Soltura Audio & TTS Service (Welsh Azure + Scottish Gaelic Review)",
     description=(
-        "Servicio de síntesis de voz para Soltura: "
-        "Gaélico Escocés (Gàidhlig, gd) y Galés (Cymraeg, cy) con Meta MMS y caché en disco."
+        "Servicio de audios para Soltura: "
+        "Galés (cy-GB) con voces neuronales comerciales de Azure (Nia / Aled) "
+        "y Gaélico Escocés (gd-GB) en revisión docente / borrador."
     ),
-    version="1.1.0",
+    version="1.2.0",
 )
 
 app.add_middleware(
@@ -24,23 +31,33 @@ app.add_middleware(
 
 
 class TTSRequest(BaseModel):
-    text: str = Field(..., json_schema_extra={"example": "Madainn mhath"})
+    text: str = Field(..., json_schema_extra={"example": "Bore da"})
     language: Optional[str] = Field(
         "gd",
-        description="Código de idioma: 'gd' (Gaélico escocés, por defecto) o 'cy' (Galés)",
-        json_schema_extra={"example": "gd"},
+        description="Código de idioma: 'cy' (Galés - Azure Nia/Aled) o 'gd' (Gaélico escocés - en revisión)",
+        json_schema_extra={"example": "cy"},
     )
     id: Optional[str] = Field(
         None,
-        description="ID estable opcional del manifest de Soltura (ej. 'gd-f6c1f5638cdcea4b')",
-        json_schema_extra={"example": "gd-f6c1f5638cdcea4b"},
+        description="ID estable opcional del manifest de Soltura (ej. 'cy-cb87f9af2a17aec0')",
+        json_schema_extra={"example": "cy-cb87f9af2a17aec0"},
+    )
+    voice: Optional[str] = Field(
+        None,
+        description="Voz opcional para Galés en Azure: 'cy-GB-NiaNeural' ('nia') o 'cy-GB-AledNeural' ('aled')",
+        json_schema_extra={"example": "cy-GB-NiaNeural"},
+    )
+    force_regenerate: Optional[bool] = Field(
+        False,
+        description="Si es true, vuelve a generar el audio aunque ya exista en caché",
     )
 
 
 class BatchItem(BaseModel):
-    id: Optional[str] = Field(None, json_schema_extra={"example": "gd-f6c1f5638cdcea4b"})
-    text: str = Field(..., json_schema_extra={"example": "Madainn mhath"})
-    language: Optional[str] = Field("gd", json_schema_extra={"example": "gd"})
+    id: Optional[str] = Field(None, json_schema_extra={"example": "cy-cb87f9af2a17aec0"})
+    text: str = Field(..., json_schema_extra={"example": "Bore da"})
+    language: Optional[str] = Field("cy", json_schema_extra={"example": "cy"})
+    voice: Optional[str] = Field(None, json_schema_extra={"example": "cy-GB-NiaNeural"})
 
 
 class BatchRequest(BaseModel):
@@ -48,9 +65,14 @@ class BatchRequest(BaseModel):
         None,
         description=(
             "Lista de frases a precargar. Si se omite, precarga automáticamente "
-            "los textos del manifest de Soltura."
+            "los textos del manifest de Soltura según los filtros."
         ),
     )
+    voice: Optional[str] = Field(
+        None,
+        description="Voz de Azure para los ítems en Galés ('cy-GB-NiaNeural' o 'cy-GB-AledNeural')",
+    )
+    force_regenerate: Optional[bool] = Field(False)
 
 
 def _audio_response(filename: str, audio_bytes: bytes, meta: dict) -> Response:
@@ -62,7 +84,11 @@ def _audio_response(filename: str, audio_bytes: bytes, meta: dict) -> Response:
             "Cache-Control": "public, max-age=31536000, immutable",
             "X-Audio-Id": str(meta.get("id", "")),
             "X-TTS-Language": str(meta.get("language", "")),
-            "X-TTS-Model": str(meta.get("model", "")),
+            "X-TTS-Provider": str(meta.get("provider", "")),
+            "X-TTS-Voice": str(meta.get("voice", "")),
+            "X-TTS-License": str(meta.get("license", "")),
+            "X-TTS-Commercial-Allowed": str(meta.get("commercialUseAllowed", "")),
+            "X-TTS-Version": str(meta.get("version", "1.0")),
             "X-Cache-Status": str(meta.get("cache", "")),
         },
     )
@@ -71,11 +97,30 @@ def _audio_response(filename: str, audio_bytes: bytes, meta: dict) -> Response:
 @app.get("/health")
 def health():
     total_manifest = len(tts_engine.items_by_id)
-    cached_manifest = sum(1 for item_id in tts_engine.items_by_id if tts_engine.is_cached(item_id))
+    cached_manifest = sum(
+        1 for item_id in tts_engine.items_by_id if tts_engine.is_cached(item_id)
+    )
+    azure_configured = bool(os.getenv("AZURE_SPEECH_KEY", "").strip())
     return {
         "status": "ok",
-        "supported_languages": LANGUAGE_MODELS,
-        "loaded_model_language": tts_engine.current_lang,
+        "strategy": {
+            "cy": {
+                "name": "Galés (Cymraeg)",
+                "provider": "Azure Cognitive Services Speech",
+                "voices": ["cy-GB-NiaNeural", "cy-GB-AledNeural"],
+                "default_voice": DEFAULT_AZURE_WELSH_VOICE,
+                "azure_key_configured": azure_configured,
+                "license": "Microsoft Azure Commercial (Paid Tier)",
+                "commercial_use_allowed": True,
+            },
+            "gd": {
+                "name": "Gaélico escocés (Gàidhlig)",
+                "status": "En revisión docente (sirve grabaciones aprobadas en caché o borrador MMS)",
+                "draft_model": MMS_MODELS["gd"],
+                "draft_license": "CC-BY-NC-4.0 (Solo revisión interna - No comercial)",
+                "commercial_alternatives": ["Grabación docente propia", "CereProc Ceitidh"],
+            },
+        },
         "soltura_manifest": {
             "total_items": total_manifest,
             "cached_items": cached_manifest,
@@ -85,30 +130,40 @@ def health():
 
 @app.get("/manifest")
 def list_manifest(
-    language: Optional[str] = Query(None, description="Filtrar por 'gd' o 'cy'"),
-    priority: Optional[int] = Query(None, description="Filtrar por prioridad (1=principales, 2=complementarios)"),
+    language: Optional[str] = Query(None, description="Filtrar por 'cy' o 'gd'"),
+    priority: Optional[int] = Query(
+        None, description="Filtrar por prioridad (1=principales, 2=complementarios)"
+    ),
 ):
     """
-    Devuelve el catálogo de audios de Soltura junto con su estado en caché y su URL directa (/audio/{id}.wav).
+    Devuelve el catálogo de audios de Soltura con su estado en caché, proveedor, voz, licencia y URL.
     """
     items = []
     for item_id, entry in tts_engine.items_by_id.items():
-        if language and entry.get("language") != language:
+        lang = entry.get("language", "gd")
+        if language and lang != language:
             continue
         if priority is not None and entry.get("priority") != priority:
             continue
+        cached = tts_engine.is_cached(item_id)
+        meta = (
+            tts_engine.read_metadata(item_id, lang, entry.get("text", ""))
+            if cached
+            else None
+        )
         items.append(
             {
                 "id": item_id,
-                "language": entry.get("language"),
+                "language": lang,
                 "locale": entry.get("locale"),
                 "text": entry.get("text"),
                 "translations": entry.get("translations", []),
                 "levels": entry.get("levels", []),
                 "priority": entry.get("priority"),
                 "kind": entry.get("kind"),
-                "model": entry.get("model"),
-                "cached": tts_engine.is_cached(item_id),
+                "reviewStatus": entry.get("reviewStatus"),
+                "cached": cached,
+                "provenance": meta,
                 "audioUrl": f"/audio/{item_id}.wav",
             }
         )
@@ -118,22 +173,29 @@ def list_manifest(
 @app.get("/audio/{item_id}")
 def get_audio_by_id(
     item_id: str,
-    text: Optional[str] = Query(None, description="Texto opcional si el ID no está en el manifest"),
-    language: Optional[str] = Query(None, description="Idioma opcional ('gd' o 'cy')"),
+    text: Optional[str] = Query(
+        None, description="Texto opcional si el ID no está en el manifest"
+    ),
+    language: Optional[str] = Query(None, description="Idioma opcional ('cy' o 'gd')"),
+    voice: Optional[str] = Query(
+        None, description="Voz opcional para Galés ('cy-GB-NiaNeural' o 'cy-GB-AledNeural')"
+    ),
 ):
     """
-    Endpoint ideal para consumir desde Soltura (<audio src=".../audio/gd-13e686b645a2570e.wav">).
-    Si el audio ya está en caché lo sirve al instante; si no, lo sintetiza y guarda en disco.
+    Endpoint principal para Soltura (<audio src=".../audio/cy-ec43e481f8caaa20.wav">).
+    Si el archivo ya fue generado y guardado en audio_cache/, lo reproduce directamente sin costo ni inferencia.
     """
     try:
         filename, audio_bytes, meta = tts_engine.synthesize(
-            text=text, language=language, item_id=item_id
+            text=text, language=language, item_id=item_id, voice=voice
         )
         return _audio_response(filename, audio_bytes, meta)
     except KeyError as exc:
         raise HTTPException(status_code=404, detail=str(exc))
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc))
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc))
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
 
@@ -141,31 +203,40 @@ def get_audio_by_id(
 @app.get("/synthesize")
 def synthesize_get(
     text: str = Query(..., description="Texto a sintetizar"),
-    language: str = Query("gd", description="Idioma: 'gd' (Gaélico escocés) o 'cy' (Galés)"),
+    language: str = Query("cy", description="Idioma: 'cy' (Galés) o 'gd' (Gaélico escocés)"),
     id: Optional[str] = Query(None, description="ID opcional de Soltura"),
+    voice: Optional[str] = Query(
+        None, description="Voz opcional para Galés ('cy-GB-NiaNeural' o 'cy-GB-AledNeural')"
+    ),
 ):
-    """Permite consumir la síntesis directamente por URL con GET."""
     try:
         filename, audio_bytes, meta = tts_engine.synthesize(
-            text=text, language=language, item_id=id
+            text=text, language=language, item_id=id, voice=voice
         )
         return _audio_response(filename, audio_bytes, meta)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc))
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc))
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
 
 
 @app.post("/synthesize")
 def synthesize_post(payload: TTSRequest):
-    """Sintetiza la frase y devuelve el stream WAV directamente."""
     try:
         filename, audio_bytes, meta = tts_engine.synthesize(
-            text=payload.text, language=payload.language, item_id=payload.id
+            text=payload.text,
+            language=payload.language,
+            item_id=payload.id,
+            voice=payload.voice,
+            force_regenerate=bool(payload.force_regenerate),
         )
         return _audio_response(filename, audio_bytes, meta)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc))
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc))
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))
 
@@ -174,18 +245,22 @@ def synthesize_post(payload: TTSRequest):
 def batch_preload(
     payload: Optional[BatchRequest] = None,
     language: Optional[str] = Query(
-        None, description="Si no se envía body, filtra el manifest por 'gd' o 'cy'"
+        None, description="Si no se envía body, filtra el manifest por 'cy' o 'gd'"
     ),
     priority: Optional[int] = Query(
-        None, description="Si no se envía body, filtra por prioridad (1=principales, 2=complementarios)"
+        None,
+        description="Si no se envía body, filtra por prioridad (1=principales, 2=complementarios)",
+    ),
+    voice: Optional[str] = Query(
+        None, description="Voz de Azure para Galés ('cy-GB-NiaNeural' o 'cy-GB-AledNeural')"
     ),
 ):
     """
-    Precarga y cachea en disco una lista de palabras/frases.
-    - Si se envía {"items": [...]}, procesa esa lista (ej. phrases.json).
-    - Si se llama sin body, precarga automáticamente los textos del manifest de Soltura.
+    Genera y guarda en disco (con sus metadatos .meta.json de proveedor, voz y licencia) una lista de frases.
     """
     items_to_process: List[BatchItem] = []
+    default_voice = (payload.voice if payload and payload.voice else None) or voice
+    force_regen = bool(payload.force_regenerate) if payload else False
 
     if payload and payload.items:
         items_to_process = payload.items
@@ -196,14 +271,23 @@ def batch_preload(
             if priority is not None and entry.get("priority") != priority:
                 continue
             items_to_process.append(
-                BatchItem(id=item_id, text=entry["text"], language=entry["language"])
+                BatchItem(
+                    id=item_id,
+                    text=entry["text"],
+                    language=entry["language"],
+                    voice=default_voice,
+                )
             )
 
     summary = []
     for item in items_to_process:
         try:
             filename, _, meta = tts_engine.synthesize(
-                text=item.text, language=item.language, item_id=item.id
+                text=item.text,
+                language=item.language,
+                item_id=item.id,
+                voice=item.voice or default_voice,
+                force_regenerate=force_regen,
             )
             summary.append(
                 {
@@ -212,6 +296,10 @@ def batch_preload(
                     "text": item.text,
                     "file": filename,
                     "audioUrl": f"/audio/{filename}",
+                    "provider": meta.get("provider"),
+                    "voice": meta.get("voice"),
+                    "license": meta.get("license"),
+                    "commercialUseAllowed": meta.get("commercialUseAllowed"),
                     "cache": meta["cache"],
                     "status": "cached",
                 }
