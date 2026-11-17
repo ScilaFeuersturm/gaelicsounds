@@ -1,0 +1,1697 @@
+{
+  "language": "gd",
+  "name": "Gaélico escocés",
+  "locale": "gd-GB",
+  "exportedOn": "2026-11-17",
+  "contentStatus": "borrador; cursos en pausa hasta completar y revisar pronunciación",
+  "items": [
+    {
+      "id": "gd-13e686b645a2570e",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Gàidhlig",
+      "translations": [
+        "gaélico escocés"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/sounds/example/1",
+        "gd/base/vocabulary/v-sounds-1",
+        "gd/base/phrases/p-sounds",
+        "gd/reference/grammar/gd-base-sounds",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "palabra",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-9ae7656f24c6aa5b",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "mòran",
+      "translations": [
+        "mucho"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/sounds/example/2",
+        "gd/base/vocabulary/v-sounds-2",
+        "gd/reference/grammar/gd-base-sounds",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "palabra",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-9a0a2f167ba9308e",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "taigh",
+      "translations": [
+        "casa"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/sounds/example/3",
+        "gd/base/vocabulary/v-sounds-3",
+        "gd/reference/grammar/gd-base-sounds",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "palabra",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-f6c1f5638cdcea4b",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Madainn mhath",
+      "translations": [
+        "Buen día"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/greetings/example/1",
+        "gd/base/vocabulary/v-greetings-1",
+        "gd/base/phrases/p-greetings",
+        "gd/reference/grammar/gd-base-greetings",
+        "gd/reference/vocabulary/gd-base-expressions",
+        "gd/daily/gd-base-greetings",
+        "gd/daily/gd-base-greetings/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-c266c3fabb1767fe",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Feasgar math",
+      "translations": [
+        "Buenas tardes"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/greetings/example/2",
+        "gd/base/vocabulary/v-greetings-2",
+        "gd/reference/grammar/gd-base-greetings",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-9b9df2db12343072",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tìoraidh",
+      "translations": [
+        "Chau"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/greetings/example/3",
+        "gd/base/vocabulary/v-greetings-3",
+        "gd/reference/grammar/gd-base-greetings",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "palabra",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-f1f091f677dc301c",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Is mise Ana",
+      "translations": [
+        "Soy Ana"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/identity/example/1",
+        "gd/base/vocabulary/v-identity-1",
+        "gd/base/phrases/p-identity",
+        "gd/reference/grammar/gd-base-identity",
+        "gd/reference/vocabulary/gd-base-expressions",
+        "gd/daily/gd-base-identity",
+        "gd/daily/gd-base-identity/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-066c4b5b039807bf",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Dè an t-ainm a th' ort?",
+      "translations": [
+        "¿Cómo te llamás?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/identity/example/2",
+        "gd/base/vocabulary/v-identity-2",
+        "gd/reference/grammar/gd-base-identity",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-5b7c92ac94d7ae7f",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "'S e Ana an t-ainm a th' orm",
+      "translations": [
+        "Me llamo Ana"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/identity/example/3",
+        "gd/base/vocabulary/v-identity-3",
+        "gd/reference/grammar/gd-base-identity",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-d75cac8a41ee8d25",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi gu math",
+      "translations": [
+        "Estoy bien"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/being/example/1",
+        "gd/base/vocabulary/v-being-1",
+        "gd/base/phrases/p-being",
+        "gd/reference/grammar/gd-base-being",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-4ccf7425659a8e25",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Chan eil mi sgìth",
+      "translations": [
+        "No estoy cansado/a"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/being/example/2",
+        "gd/base/vocabulary/v-being-2",
+        "gd/reference/grammar/gd-base-being",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-f65e6ae79bfc89e0",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "A bheil thu deiseil?",
+      "translations": [
+        "¿Estás listo/a?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/being/example/3",
+        "gd/base/vocabulary/v-being-3",
+        "gd/reference/grammar/gd-base-being",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-f33b962ad83e6f01",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Cò às a tha thu?",
+      "translations": [
+        "¿De dónde sos?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/origin/example/1",
+        "gd/base/vocabulary/v-origin-1",
+        "gd/base/phrases/p-origin",
+        "gd/reference/grammar/gd-base-origin",
+        "gd/reference/vocabulary/gd-base-expressions",
+        "gd/daily/gd-base-origin",
+        "gd/daily/gd-base-origin/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-882ea4f76b25adf9",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi à Alba",
+      "translations": [
+        "Soy de Escocia"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/origin/example/2",
+        "gd/base/vocabulary/v-origin-2",
+        "gd/reference/grammar/gd-base-origin",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-a3c6a7943b274ee2",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi a' fuireach ann an Alba",
+      "translations": [
+        "Vivo en Escocia"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/origin/example/3",
+        "gd/base/vocabulary/v-origin-3",
+        "gd/reference/grammar/gd-base-origin",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-517631a622d9d234",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "aon, dhà, trì",
+      "translations": [
+        "uno, dos, tres"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/numbers/example/1",
+        "gd/base/vocabulary/v-numbers-1",
+        "gd/base/phrases/p-numbers",
+        "gd/reference/grammar/gd-base-numbers",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-59685f0880eeb6aa",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "ceithir, còig, sia",
+      "translations": [
+        "cuatro, cinco, seis"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/numbers/example/2",
+        "gd/base/vocabulary/v-numbers-2",
+        "gd/reference/grammar/gd-base-numbers",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-9a8ab31023fb2d31",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi fichead bliadhna a dh'aois",
+      "translations": [
+        "Tengo veinte años"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/numbers/example/3",
+        "gd/base/vocabulary/v-numbers-3",
+        "gd/reference/grammar/gd-base-numbers",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-502f334383d8b903",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha bràthair agam",
+      "translations": [
+        "Tengo un hermano"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/family/example/1",
+        "gd/base/vocabulary/v-family-1",
+        "gd/base/phrases/p-family",
+        "gd/reference/grammar/gd-base-family",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-391997a8644d226b",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha piuthar agam",
+      "translations": [
+        "Tengo una hermana"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/family/example/2",
+        "gd/base/vocabulary/v-family-2",
+        "gd/reference/grammar/gd-base-family",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-711081cd168d1483",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha cù agad",
+      "translations": [
+        "Tenés un perro"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/family/example/3",
+        "gd/base/vocabulary/v-family-3",
+        "gd/reference/grammar/gd-base-family",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-80b4c3123bc95b3e",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi a' leughadh",
+      "translations": [
+        "Estoy leyendo"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/routine/example/1",
+        "gd/base/vocabulary/v-routine-1",
+        "gd/base/phrases/p-routine",
+        "gd/reference/grammar/gd-base-routine",
+        "gd/reference/vocabulary/gd-base-expressions",
+        "gd/daily/gd-base-routine",
+        "gd/daily/gd-base-routine/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-dee468b28a811311",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi ag obair",
+      "translations": [
+        "Estoy trabajando"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/routine/example/2",
+        "gd/base/vocabulary/v-routine-2",
+        "gd/reference/grammar/gd-base-routine",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-ebcfda6a09b2d8a6",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi ag ionnsachadh Gàidhlig",
+      "translations": [
+        "Estoy aprendiendo gaélico escocés"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/routine/example/3",
+        "gd/base/vocabulary/v-routine-3",
+        "gd/reference/grammar/gd-base-routine",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-3853352b6340d33f",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Is toil leam tì",
+      "translations": [
+        "Me gusta el té"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/likes/example/1",
+        "gd/base/vocabulary/v-likes-1",
+        "gd/base/phrases/p-likes",
+        "gd/reference/grammar/gd-base-likes",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-c41680679aacabed",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Cha toil leam cofaidh",
+      "translations": [
+        "No me gusta el café"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/likes/example/2",
+        "gd/base/vocabulary/v-likes-2",
+        "gd/reference/grammar/gd-base-likes",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-dbc4f2e75bdc58b2",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "An toil leat ceòl?",
+      "translations": [
+        "¿Te gusta la música?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/likes/example/3",
+        "gd/base/vocabulary/v-likes-3",
+        "gd/reference/grammar/gd-base-likes",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-361c37b0f7d684f4",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Bu toil leam tì",
+      "translations": [
+        "Me gustaría un té"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/cafe/example/1",
+        "gd/base/vocabulary/v-cafe-1",
+        "gd/base/phrases/p-cafe",
+        "gd/reference/grammar/gd-base-cafe",
+        "gd/reference/vocabulary/gd-base-expressions",
+        "gd/daily/gd-base-cafe",
+        "gd/daily/gd-base-cafe/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-19d039a326948811",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Mas e ur toil e",
+      "translations": [
+        "Por favor"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/cafe/example/2",
+        "gd/base/vocabulary/v-cafe-2",
+        "gd/reference/grammar/gd-base-cafe",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-62dbb96b5a298013",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Mòran taing",
+      "translations": [
+        "Muchas gracias"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/cafe/example/3",
+        "gd/base/vocabulary/v-cafe-3",
+        "gd/reference/grammar/gd-base-cafe",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-de7d72d33e891ecd",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Càite a bheil am bus?",
+      "translations": [
+        "¿Dónde está el colectivo?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/places/example/1",
+        "gd/base/vocabulary/v-places-1",
+        "gd/base/phrases/p-places",
+        "gd/reference/grammar/gd-base-places",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-25b26cd25e66a7fb",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi aig an taigh",
+      "translations": [
+        "Estoy en casa"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/places/example/2",
+        "gd/base/vocabulary/v-places-2",
+        "gd/reference/grammar/gd-base-places",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-c39796f31e2ccb7d",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi a' dol dhachaigh",
+      "translations": [
+        "Voy a casa"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/places/example/3",
+        "gd/base/vocabulary/v-places-3",
+        "gd/reference/grammar/gd-base-places",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-7f17eff3234126ba",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Ciamar a tha thu?",
+      "translations": [
+        "¿Cómo estás?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/conversation/example/1",
+        "gd/base/vocabulary/v-conversation-1",
+        "gd/base/phrases/p-conversation",
+        "gd/reference/grammar/gd-base-conversation",
+        "gd/reference/vocabulary/gd-base-expressions",
+        "gd/daily/gd-base-conversation",
+        "gd/daily/gd-base-conversation/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-143705d3a2980355",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Chan eil mi a' tuigsinn",
+      "translations": [
+        "No entiendo"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/conversation/example/2",
+        "gd/base/vocabulary/v-conversation-2",
+        "gd/reference/grammar/gd-base-conversation",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-fc3ae9b45e95ff8e",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Bruidhinn nas slaodaiche",
+      "translations": [
+        "Hablá más despacio"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/lesson/conversation/example/3",
+        "gd/base/vocabulary/v-conversation-3",
+        "gd/reference/grammar/gd-base-conversation",
+        "gd/reference/vocabulary/gd-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-baa7837588a6b6d1",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Madainn mhath. Is mise Ana. Dè an t-ainm a th' ort.",
+      "translations": [],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/scenario/transfer-1"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-9d8b7d36c86d84ef",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi gu math. Cò às a tha thu. Tha mi fichead bliadhna a dh'aois.",
+      "translations": [],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/scenario/transfer-2"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-e7dfffe318a95b9d",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha bràthair agam. Tha mi a' leughadh. Is toil leam tì.",
+      "translations": [],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/scenario/transfer-3"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-41363dc6055e39b1",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Bu toil leam tì. Càite a bheil am bus. Ciamar a tha thu.",
+      "translations": [],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "gd/base/scenario/transfer-4"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-b30bcae018e05337",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "mo mhàthair",
+      "translations": [
+        "mi madre"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/lenition/example/1",
+        "gd/base-2/vocabulary/v-lenition-1",
+        "gd/base-2/phrases/p-lenition",
+        "gd/reference/grammar/gd-base-2-lenition",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-ae6b893ecea77622",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "mo bhràthair",
+      "translations": [
+        "mi hermano"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/lenition/example/2",
+        "gd/base-2/vocabulary/v-lenition-2",
+        "gd/reference/grammar/gd-base-2-lenition",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-45cc924e9610df04",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "taigh beag",
+      "translations": [
+        "casa pequeña"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/lenition/example/3",
+        "gd/base-2/vocabulary/v-lenition-3",
+        "gd/reference/grammar/gd-base-2-lenition",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-1cb8b7f130588e65",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Bha mi sgìth an-dè",
+      "translations": [
+        "Ayer estaba cansado/a"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/past-being/example/1",
+        "gd/base-2/vocabulary/v-past-being-1",
+        "gd/base-2/phrases/p-past-being",
+        "gd/reference/grammar/gd-base-2-past-being",
+        "gd/reference/vocabulary/gd-base-2-expressions",
+        "gd/daily/gd-base-2-past-being",
+        "gd/daily/gd-base-2-past-being/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-558b9302fcb616ba",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Cha robh mi aig an taigh",
+      "translations": [
+        "No estaba en casa"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/past-being/example/2",
+        "gd/base-2/vocabulary/v-past-being-2",
+        "gd/reference/grammar/gd-base-2-past-being",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-24836cd5415989fc",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "An robh thu ag obair?",
+      "translations": [
+        "¿Estabas trabajando?"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/past-being/example/3",
+        "gd/base-2/vocabulary/v-past-being-3",
+        "gd/reference/grammar/gd-base-2-past-being",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-6cf03875acced933",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Leugh mi leabhar",
+      "translations": [
+        "Leí un libro"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/finished-past/example/1",
+        "gd/base-2/vocabulary/v-finished-past-1",
+        "gd/base-2/phrases/p-finished-past",
+        "gd/reference/grammar/gd-base-2-finished-past",
+        "gd/reference/vocabulary/gd-base-2-expressions",
+        "gd/daily/gd-base-2-finished-past",
+        "gd/daily/gd-base-2-finished-past/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-f4caa0a2b7c74ef0",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Dh'ith mi aran",
+      "translations": [
+        "Comí pan"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/finished-past/example/2",
+        "gd/base-2/vocabulary/v-finished-past-2",
+        "gd/reference/grammar/gd-base-2-finished-past",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-728a6ab60a7e0986",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Chaidh mi dhachaigh",
+      "translations": [
+        "Fui a casa"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/finished-past/example/3",
+        "gd/base-2/vocabulary/v-finished-past-3",
+        "gd/reference/grammar/gd-base-2-finished-past",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-b729003264b9ff41",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi air crìochnachadh",
+      "translations": [
+        "Ya terminé"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/completed/example/1",
+        "gd/base-2/vocabulary/v-completed-1",
+        "gd/base-2/phrases/p-completed",
+        "gd/reference/grammar/gd-base-2-completed",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-b958ddcc88598351",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi air tì òl",
+      "translations": [
+        "Ya tomé té"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/completed/example/2",
+        "gd/base-2/vocabulary/v-completed-2",
+        "gd/reference/grammar/gd-base-2-completed",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-2389398cbdcb7923",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Chan eil mi air crìochnachadh",
+      "translations": [
+        "No terminé todavía"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/completed/example/3",
+        "gd/base-2/vocabulary/v-completed-3",
+        "gd/reference/grammar/gd-base-2-completed",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-50761458108d8373",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Bidh mi ag obair a-màireach",
+      "translations": [
+        "Trabajaré mañana"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/future/example/1",
+        "gd/base-2/vocabulary/v-future-1",
+        "gd/base-2/phrases/p-future",
+        "gd/reference/grammar/gd-base-2-future",
+        "gd/reference/vocabulary/gd-base-2-expressions",
+        "gd/daily/gd-base-2-future",
+        "gd/daily/gd-base-2-future/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-83f06776305cf095",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Cha bhi mi aig an taigh",
+      "translations": [
+        "No estaré en casa"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/future/example/2",
+        "gd/base-2/vocabulary/v-future-2",
+        "gd/reference/grammar/gd-base-2-future",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-5bb6456be8688e6d",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Am bi thu an seo?",
+      "translations": [
+        "¿Vas a estar acá?"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/future/example/3",
+        "gd/base-2/vocabulary/v-future-3",
+        "gd/reference/grammar/gd-base-2-future",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-ff6183b2f9de4be0",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Is urrainn dhomh snàmh",
+      "translations": [
+        "Puedo nadar"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/ability/example/1",
+        "gd/base-2/vocabulary/v-ability-1",
+        "gd/base-2/phrases/p-ability",
+        "gd/reference/grammar/gd-base-2-ability",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-ea3e5b662b55e343",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Chan urrainn dhomh tighinn",
+      "translations": [
+        "No puedo venir"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/ability/example/2",
+        "gd/base-2/vocabulary/v-ability-2",
+        "gd/reference/grammar/gd-base-2-ability",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-7683878bed3cae23",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha feum agam air cuideachadh",
+      "translations": [
+        "Necesito ayuda"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/ability/example/3",
+        "gd/base-2/vocabulary/v-ability-3",
+        "gd/reference/grammar/gd-base-2-ability",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-966eb830b5f8e79e",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "taigh mòr",
+      "translations": [
+        "casa grande"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/description/example/1",
+        "gd/base-2/vocabulary/v-description-1",
+        "gd/base-2/phrases/p-description",
+        "gd/reference/grammar/gd-base-2-description",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-9334e03a8846baa7",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "nighean bheag",
+      "translations": [
+        "niña pequeña"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/description/example/2",
+        "gd/base-2/vocabulary/v-description-2",
+        "gd/reference/grammar/gd-base-2-description",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-acb2c2e8679d41ab",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "a' bhean",
+      "translations": [
+        "la mujer"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/description/example/3",
+        "gd/base-2/vocabulary/v-description-3",
+        "gd/reference/grammar/gd-base-2-description",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-d223cc520ccf9bb6",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha seo nas motha",
+      "translations": [
+        "Esto es más grande"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/comparison/example/1",
+        "gd/base-2/vocabulary/v-comparison-1",
+        "gd/base-2/phrases/p-comparison",
+        "gd/reference/grammar/gd-base-2-comparison",
+        "gd/reference/vocabulary/gd-base-2-expressions",
+        "gd/daily/gd-base-2-comparison",
+        "gd/daily/gd-base-2-comparison/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-8e00b07511a81f8f",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha seo nas lugha",
+      "translations": [
+        "Esto es más pequeño"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/comparison/example/2",
+        "gd/base-2/vocabulary/v-comparison-2",
+        "gd/reference/grammar/gd-base-2-comparison",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-0fb7959853525ae4",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Is fheàrr leam tì",
+      "translations": [
+        "Prefiero té"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/comparison/example/3",
+        "gd/base-2/vocabulary/v-comparison-3",
+        "gd/reference/grammar/gd-base-2-comparison",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-ff606a2865a95a01",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi tinn",
+      "translations": [
+        "Estoy enfermo/a"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/health/example/1",
+        "gd/base-2/vocabulary/v-health-1",
+        "gd/base-2/phrases/p-health",
+        "gd/reference/grammar/gd-base-2-health",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-7d5494fae1fed115",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha an t-acras orm",
+      "translations": [
+        "Tengo hambre"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/health/example/2",
+        "gd/base-2/vocabulary/v-health-2",
+        "gd/reference/grammar/gd-base-2-health",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-dc35905a7b0e3e29",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha feum agam air dotair",
+      "translations": [
+        "Necesito un médico"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/health/example/3",
+        "gd/base-2/vocabulary/v-health-3",
+        "gd/reference/grammar/gd-base-2-health",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-a112ae0450ff170b",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "A bheil thu airson tighinn?",
+      "translations": [
+        "¿Querés venir?"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/arrangements/example/1",
+        "gd/base-2/vocabulary/v-arrangements-1",
+        "gd/base-2/phrases/p-arrangements",
+        "gd/reference/grammar/gd-base-2-arrangements",
+        "gd/reference/vocabulary/gd-base-2-expressions",
+        "gd/daily/gd-base-2-arrangements",
+        "gd/daily/gd-base-2-arrangements/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-98b7bfbfdea3f355",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi airson coiseachd",
+      "translations": [
+        "Quiero caminar"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/arrangements/example/2",
+        "gd/base-2/vocabulary/v-arrangements-2",
+        "gd/reference/grammar/gd-base-2-arrangements",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-6fd1867cfb829b4e",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi duilich",
+      "translations": [
+        "Lo siento"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/arrangements/example/3",
+        "gd/base-2/vocabulary/v-arrangements-3",
+        "gd/reference/grammar/gd-base-2-arrangements",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-faf1af047228365c",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi aig an taigh oir tha mi tinn",
+      "translations": [
+        "Estoy en casa porque estoy enfermo/a"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/reasons/example/1",
+        "gd/base-2/vocabulary/v-reasons-1",
+        "gd/base-2/phrases/p-reasons",
+        "gd/reference/grammar/gd-base-2-reasons",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-f0cbc311b031e19f",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi sgìth ach tha mi gu math",
+      "translations": [
+        "Estoy cansado/a pero estoy bien"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/reasons/example/2",
+        "gd/base-2/vocabulary/v-reasons-2",
+        "gd/reference/grammar/gd-base-2-reasons",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-7f5705b1051c5d20",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "An toiseach tì, an uair sin cofaidh",
+      "translations": [
+        "Primero té, después café"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/reasons/example/3",
+        "gd/base-2/vocabulary/v-reasons-3",
+        "gd/reference/grammar/gd-base-2-reasons",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-be3c11c595560247",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Bha mi aig an taigh an-dè",
+      "translations": [
+        "Ayer estaba en casa"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/messages/example/1",
+        "gd/base-2/vocabulary/v-messages-1",
+        "gd/base-2/phrases/p-messages",
+        "gd/reference/grammar/gd-base-2-messages",
+        "gd/reference/vocabulary/gd-base-2-expressions",
+        "gd/daily/gd-base-2-messages",
+        "gd/daily/gd-base-2-messages/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-f03b77e69d94c1f9",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi ag obair an-diugh",
+      "translations": [
+        "Hoy estoy trabajando"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/messages/example/2",
+        "gd/base-2/vocabulary/v-messages-2",
+        "gd/reference/grammar/gd-base-2-messages",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-2e732c82ea7f2588",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Bidh mi an seo a-màireach",
+      "translations": [
+        "Mañana estaré acá"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/lesson/messages/example/3",
+        "gd/base-2/vocabulary/v-messages-3",
+        "gd/reference/grammar/gd-base-2-messages",
+        "gd/reference/vocabulary/gd-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-b477ec40128e606d",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Bha mi sgìth an-dè. Leugh mi leabhar. Tha mi air crìochnachadh.",
+      "translations": [],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/scenario/transfer-1"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-7c495cc79be08729",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "Tha mi air crìochnachadh. Bidh mi ag obair a-màireach. Tha feum agam air cuideachadh.",
+      "translations": [],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/scenario/transfer-2"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-3ae2d21aaae11562",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "taigh mòr. Tha seo nas motha. Tha mi tinn.",
+      "translations": [],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/scenario/transfer-3"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "gd-045b08fe400be525",
+      "language": "gd",
+      "locale": "gd-GB",
+      "text": "A bheil thu airson tighinn. Tha mi aig an taigh oir tha mi tinn. Bha mi aig an taigh an-dè.",
+      "translations": [],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "gd/base-2/scenario/transfer-4"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    }
+  ]
+}

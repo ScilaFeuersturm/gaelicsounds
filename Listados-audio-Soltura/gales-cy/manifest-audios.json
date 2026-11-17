@@ -1,0 +1,1662 @@
+{
+  "language": "cy",
+  "name": "Galés",
+  "locale": "cy-GB",
+  "exportedOn": "2026-11-17",
+  "contentStatus": "borrador; cursos en pausa hasta completar y revisar pronunciación",
+  "items": [
+    {
+      "id": "cy-ec43e481f8caaa20",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Cymru",
+      "translations": [
+        "Gales"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/sounds/example/1",
+        "cy/base/vocabulary/v-sounds-1",
+        "cy/base/phrases/p-sounds",
+        "cy/reference/grammar/cy-base-sounds",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "palabra",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-6e17abe5d19c928d",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Cymraeg",
+      "translations": [
+        "galés"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/sounds/example/2",
+        "cy/base/vocabulary/v-sounds-2",
+        "cy/reference/grammar/cy-base-sounds",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "palabra",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-085adb7e8e47c715",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "tŷ",
+      "translations": [
+        "casa"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/sounds/example/3",
+        "cy/base/vocabulary/v-sounds-3",
+        "cy/reference/grammar/cy-base-sounds",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "palabra",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-cb87f9af2a17aec0",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Bore da",
+      "translations": [
+        "Buen día"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/greetings/example/1",
+        "cy/base/vocabulary/v-greetings-1",
+        "cy/base/phrases/p-greetings",
+        "cy/reference/grammar/cy-base-greetings",
+        "cy/reference/vocabulary/cy-base-expressions",
+        "cy/daily/cy-base-greetings",
+        "cy/daily/cy-base-greetings/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-be41e7b8d5d2a644",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Diolch",
+      "translations": [
+        "Gracias"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/greetings/example/2",
+        "cy/base/vocabulary/v-greetings-2",
+        "cy/reference/grammar/cy-base-greetings",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "palabra",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-8cd10cc5923e7a5e",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Hwyl fawr",
+      "translations": [
+        "Chau"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/greetings/example/3",
+        "cy/base/vocabulary/v-greetings-3",
+        "cy/reference/grammar/cy-base-greetings",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-dc544b527f50a404",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Ana ydw i",
+      "translations": [
+        "Soy Ana"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/identity/example/1",
+        "cy/base/vocabulary/v-identity-1",
+        "cy/base/phrases/p-identity",
+        "cy/reference/grammar/cy-base-identity",
+        "cy/reference/vocabulary/cy-base-expressions",
+        "cy/daily/cy-base-identity",
+        "cy/daily/cy-base-identity/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-dcd0974fefbb9818",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Beth yw dy enw di?",
+      "translations": [
+        "¿Cómo te llamás?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/identity/example/2",
+        "cy/base/vocabulary/v-identity-2",
+        "cy/reference/grammar/cy-base-identity",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-76ac5747c3ddc6bc",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Pwy wyt ti?",
+      "translations": [
+        "¿Quién sos?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/identity/example/3",
+        "cy/base/vocabulary/v-identity-3",
+        "cy/reference/grammar/cy-base-identity",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-b218784e5e06bd57",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n dod o Gymru",
+      "translations": [
+        "Soy de Gales"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/origin/example/1",
+        "cy/base/vocabulary/v-origin-1",
+        "cy/base/phrases/p-origin",
+        "cy/reference/grammar/cy-base-origin",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-2536093da1816926",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n byw yng Nghymru",
+      "translations": [
+        "Vivo en Gales"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/origin/example/2",
+        "cy/base/vocabulary/v-origin-2",
+        "cy/reference/grammar/cy-base-origin",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-71ad9b5e12b3200e",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n byw yma",
+      "translations": [
+        "Vivo acá"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/origin/example/3",
+        "cy/base/vocabulary/v-origin-3",
+        "cy/reference/grammar/cy-base-origin",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-7ff3f29ab786974b",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n hapus",
+      "translations": [
+        "Estoy feliz"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/being/example/1",
+        "cy/base/vocabulary/v-being-1",
+        "cy/base/phrases/p-being",
+        "cy/reference/grammar/cy-base-being",
+        "cy/reference/vocabulary/cy-base-expressions",
+        "cy/daily/cy-base-being",
+        "cy/daily/cy-base-being/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-999d02ae0595644e",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i ddim yn barod",
+      "translations": [
+        "No estoy listo/a"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/being/example/2",
+        "cy/base/vocabulary/v-being-2",
+        "cy/reference/grammar/cy-base-being",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-03cc8dcf2f2c3953",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Wyt ti'n barod?",
+      "translations": [
+        "¿Estás listo/a?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/being/example/3",
+        "cy/base/vocabulary/v-being-3",
+        "cy/reference/grammar/cy-base-being",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-38b9229c5a131db8",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "un, dau, tri",
+      "translations": [
+        "uno, dos, tres"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/numbers/example/1",
+        "cy/base/vocabulary/v-numbers-1",
+        "cy/base/phrases/p-numbers",
+        "cy/reference/grammar/cy-base-numbers",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-1762defef27c1612",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "pedwar, pump, chwech",
+      "translations": [
+        "cuatro, cinco, seis"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/numbers/example/2",
+        "cy/base/vocabulary/v-numbers-2",
+        "cy/reference/grammar/cy-base-numbers",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-9f952c8b9fe16b1a",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n ugain oed",
+      "translations": [
+        "Tengo veinte años"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/numbers/example/3",
+        "cy/base/vocabulary/v-numbers-3",
+        "cy/reference/grammar/cy-base-numbers",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-ff3596b7b4235191",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Mae gen i frawd",
+      "translations": [
+        "Tengo un hermano"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/family/example/1",
+        "cy/base/vocabulary/v-family-1",
+        "cy/base/phrases/p-family",
+        "cy/reference/grammar/cy-base-family",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-84172cf2223e87b4",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Mae gen i chwaer",
+      "translations": [
+        "Tengo una hermana"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/family/example/2",
+        "cy/base/vocabulary/v-family-2",
+        "cy/reference/grammar/cy-base-family",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-ba3ed505467c715f",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Mae hi yma",
+      "translations": [
+        "Ella está acá"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/family/example/3",
+        "cy/base/lesson/places/example/2",
+        "cy/base/vocabulary/v-family-3",
+        "cy/base/vocabulary/v-places-2",
+        "cy/reference/grammar/cy-base-family",
+        "cy/reference/grammar/cy-base-places",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-9af129fae16cb444",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n dysgu Cymraeg",
+      "translations": [
+        "Aprendo galés"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/routine/example/1",
+        "cy/base/vocabulary/v-routine-1",
+        "cy/base/phrases/p-routine",
+        "cy/reference/grammar/cy-base-routine",
+        "cy/reference/vocabulary/cy-base-expressions",
+        "cy/daily/cy-base-routine",
+        "cy/daily/cy-base-routine/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-fa888f8adbefc605",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n gweithio bob dydd",
+      "translations": [
+        "Trabajo todos los días"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/routine/example/2",
+        "cy/base/vocabulary/v-routine-2",
+        "cy/reference/grammar/cy-base-routine",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-a9ea7fb22645b2b3",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n darllen",
+      "translations": [
+        "Estoy leyendo"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/routine/example/3",
+        "cy/base/vocabulary/v-routine-3",
+        "cy/reference/grammar/cy-base-routine",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-45ed76b4c98dd467",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n hoffi te",
+      "translations": [
+        "Me gusta el té"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/likes/example/1",
+        "cy/base/vocabulary/v-likes-1",
+        "cy/base/phrases/p-likes",
+        "cy/reference/grammar/cy-base-likes",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-d76f3ad1c1fd8f0e",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i ddim yn hoffi coffi",
+      "translations": [
+        "No me gusta el café"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/likes/example/2",
+        "cy/base/vocabulary/v-likes-2",
+        "cy/reference/grammar/cy-base-likes",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-ad3d9263aebd747a",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n hoffi darllen",
+      "translations": [
+        "Me gusta leer"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/likes/example/3",
+        "cy/base/vocabulary/v-likes-3",
+        "cy/reference/grammar/cy-base-likes",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-2bb1a262e65ff3ef",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Ga i de?",
+      "translations": [
+        "¿Me da un té?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/cafe/example/1",
+        "cy/base/vocabulary/v-cafe-1",
+        "cy/base/phrases/p-cafe",
+        "cy/reference/grammar/cy-base-cafe",
+        "cy/reference/vocabulary/cy-base-expressions",
+        "cy/daily/cy-base-cafe",
+        "cy/daily/cy-base-cafe/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-d796e2282ce68809",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Os gwelwch yn dda",
+      "translations": [
+        "Por favor"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/cafe/example/2",
+        "cy/base/vocabulary/v-cafe-2",
+        "cy/reference/grammar/cy-base-cafe",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-cf13e9521ec4f910",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Faint ydy hwn?",
+      "translations": [
+        "¿Cuánto cuesta este?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/cafe/example/3",
+        "cy/base/vocabulary/v-cafe-3",
+        "cy/reference/grammar/cy-base-cafe",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-f99b94e7f1ccc92e",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Ble mae'r orsaf?",
+      "translations": [
+        "¿Dónde está la estación?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/places/example/1",
+        "cy/base/vocabulary/v-places-1",
+        "cy/base/phrases/p-places",
+        "cy/reference/grammar/cy-base-places",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-61de575d31011a12",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n mynd adref",
+      "translations": [
+        "Voy a casa"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/places/example/3",
+        "cy/base/vocabulary/v-places-3",
+        "cy/reference/grammar/cy-base-places",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-6d5ffaf0c1dc360e",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Sut wyt ti?",
+      "translations": [
+        "¿Cómo estás?"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/conversation/example/1",
+        "cy/base/vocabulary/v-conversation-1",
+        "cy/base/phrases/p-conversation",
+        "cy/reference/grammar/cy-base-conversation",
+        "cy/reference/vocabulary/cy-base-expressions",
+        "cy/daily/cy-base-conversation",
+        "cy/daily/cy-base-conversation/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-df90e6394c65a4d2",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i ddim yn deall",
+      "translations": [
+        "No entiendo"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/conversation/example/2",
+        "cy/base/vocabulary/v-conversation-2",
+        "cy/reference/grammar/cy-base-conversation",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-4ea7657df51608de",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Arafach, os gwelwch yn dda",
+      "translations": [
+        "Más despacio, por favor"
+      ],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/lesson/conversation/example/3",
+        "cy/base/vocabulary/v-conversation-3",
+        "cy/reference/grammar/cy-base-conversation",
+        "cy/reference/vocabulary/cy-base-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-43ea88fdc27f7b7c",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Bore da. Ana ydw i. Beth yw dy enw di.",
+      "translations": [],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/scenario/transfer-1"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-08461225612afcc1",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n dod o Gymru. Dw i'n hapus. Dw i'n ugain oed.",
+      "translations": [],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/scenario/transfer-2"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-8b22f55f87022908",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Mae gen i frawd. Dw i'n dysgu Cymraeg. Dw i'n hoffi te.",
+      "translations": [],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/scenario/transfer-3"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-bd4bf96ccb6b7651",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Ga i de. Ble mae'r orsaf. Sut wyt ti.",
+      "translations": [],
+      "levels": [
+        "A1"
+      ],
+      "sources": [
+        "cy/base/scenario/transfer-4"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-94139e1f3a5afaee",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "o Gymru",
+      "translations": [
+        "de Gales"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/mutations/example/1",
+        "cy/base-2/vocabulary/v-mutations-1",
+        "cy/base-2/phrases/p-mutations",
+        "cy/reference/grammar/cy-base-2-mutations",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-1f3bc15b94a24cae",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "i Gaerdydd",
+      "translations": [
+        "a Cardiff"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/mutations/example/2",
+        "cy/base-2/vocabulary/v-mutations-2",
+        "cy/reference/grammar/cy-base-2-mutations",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-421ac4bd90e91fba",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "dy dad",
+      "translations": [
+        "tu padre"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/mutations/example/3",
+        "cy/base-2/vocabulary/v-mutations-3",
+        "cy/reference/grammar/cy-base-2-mutations",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-97f0189ea421356e",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Roeddwn i'n flinedig ddoe",
+      "translations": [
+        "Ayer estaba cansado/a"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/past-being/example/1",
+        "cy/base-2/vocabulary/v-past-being-1",
+        "cy/base-2/phrases/p-past-being",
+        "cy/reference/grammar/cy-base-2-past-being",
+        "cy/reference/vocabulary/cy-base-2-expressions",
+        "cy/daily/cy-base-2-past-being",
+        "cy/daily/cy-base-2-past-being/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-3c4a0c633b629efc",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Roeddwn i gartref neithiwr",
+      "translations": [
+        "Anoche estaba en casa"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/past-being/example/2",
+        "cy/base-2/vocabulary/v-past-being-2",
+        "cy/reference/grammar/cy-base-2-past-being",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-74b680881138659c",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Doeddwn i ddim yn barod",
+      "translations": [
+        "No estaba listo/a"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/past-being/example/3",
+        "cy/base-2/vocabulary/v-past-being-3",
+        "cy/reference/grammar/cy-base-2-past-being",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-d6e0c0baa7971fc1",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Es i adref",
+      "translations": [
+        "Fui a casa"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/finished-past/example/1",
+        "cy/base-2/vocabulary/v-finished-past-1",
+        "cy/base-2/phrases/p-finished-past",
+        "cy/reference/grammar/cy-base-2-finished-past",
+        "cy/reference/vocabulary/cy-base-2-expressions",
+        "cy/daily/cy-base-2-finished-past",
+        "cy/daily/cy-base-2-finished-past/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-b3e146f92a3dcfcd",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Wnes i ddarllen ddoe",
+      "translations": [
+        "Leí ayer"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/finished-past/example/2",
+        "cy/base-2/vocabulary/v-finished-past-2",
+        "cy/reference/grammar/cy-base-2-finished-past",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-d3652ce0f5a5c83b",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Wnes i ddim gweithio",
+      "translations": [
+        "No trabajé"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/finished-past/example/3",
+        "cy/base-2/vocabulary/v-finished-past-3",
+        "cy/reference/grammar/cy-base-2-finished-past",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-63373cb45dfd67cd",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i wedi bwyta",
+      "translations": [
+        "Ya comí"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/experiences/example/1",
+        "cy/base-2/vocabulary/v-experiences-1",
+        "cy/base-2/phrases/p-experiences",
+        "cy/reference/grammar/cy-base-2-experiences",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-f9eb9d7f4ae4e9fa",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i wedi gorffen",
+      "translations": [
+        "Ya terminé"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/experiences/example/2",
+        "cy/base-2/vocabulary/v-experiences-2",
+        "cy/reference/grammar/cy-base-2-experiences",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-5066c67e1c9c058f",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i ddim wedi gorffen eto",
+      "translations": [
+        "Todavía no terminé"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/experiences/example/3",
+        "cy/base-2/vocabulary/v-experiences-3",
+        "cy/reference/grammar/cy-base-2-experiences",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-d49a30dcad01c912",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Bydda i'n gweithio yfory",
+      "translations": [
+        "Trabajaré mañana",
+        "Mañana trabajaré"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/future/example/1",
+        "cy/base-2/lesson/messages/example/3",
+        "cy/base-2/vocabulary/v-future-1",
+        "cy/base-2/vocabulary/v-messages-3",
+        "cy/base-2/phrases/p-future",
+        "cy/reference/grammar/cy-base-2-future",
+        "cy/reference/grammar/cy-base-2-messages",
+        "cy/reference/vocabulary/cy-base-2-expressions",
+        "cy/daily/cy-base-2-future",
+        "cy/daily/cy-base-2-future/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-a1edd8aacfda8f12",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Bydda i gartref",
+      "translations": [
+        "Estaré en casa"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/future/example/2",
+        "cy/base-2/vocabulary/v-future-2",
+        "cy/reference/grammar/cy-base-2-future",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-3f2485d138382b55",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n mynd i weithio",
+      "translations": [
+        "Voy a trabajar"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/future/example/3",
+        "cy/base-2/vocabulary/v-future-3",
+        "cy/reference/grammar/cy-base-2-future",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-aadec688b5eb887a",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Galla i ddarllen",
+      "translations": [
+        "Puedo leer"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/ability/example/1",
+        "cy/base-2/vocabulary/v-ability-1",
+        "cy/base-2/phrases/p-ability",
+        "cy/reference/grammar/cy-base-2-ability",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-95071f48b615b20c",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i angen help",
+      "translations": [
+        "Necesito ayuda"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/ability/example/2",
+        "cy/base-2/vocabulary/v-ability-2",
+        "cy/reference/grammar/cy-base-2-ability",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-2f852279eb9326cb",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Allwch chi helpu?",
+      "translations": [
+        "¿Puede ayudar?"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/ability/example/3",
+        "cy/base-2/vocabulary/v-ability-3",
+        "cy/reference/grammar/cy-base-2-ability",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-88b09f55370c73d1",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "tŷ mawr",
+      "translations": [
+        "casa grande"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/people-places/example/1",
+        "cy/base-2/vocabulary/v-people-places-1",
+        "cy/base-2/phrases/p-people-places",
+        "cy/reference/grammar/cy-base-2-people-places",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-3465175c840f280f",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "merch fach",
+      "translations": [
+        "niña pequeña"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/people-places/example/2",
+        "cy/base-2/vocabulary/v-people-places-2",
+        "cy/reference/grammar/cy-base-2-people-places",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-ddf940b06c21b8c7",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Mae'r tŷ yn fawr",
+      "translations": [
+        "La casa es grande"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/people-places/example/3",
+        "cy/base-2/vocabulary/v-people-places-3",
+        "cy/reference/grammar/cy-base-2-people-places",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-99ce086b45da0819",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Mae hwn yn fwy",
+      "translations": [
+        "Este es más grande"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/comparison/example/1",
+        "cy/base-2/vocabulary/v-comparison-1",
+        "cy/base-2/phrases/p-comparison",
+        "cy/reference/grammar/cy-base-2-comparison",
+        "cy/reference/vocabulary/cy-base-2-expressions",
+        "cy/daily/cy-base-2-comparison",
+        "cy/daily/cy-base-2-comparison/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-296b55db74fd39c0",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Mae hwn yn llai",
+      "translations": [
+        "Este es más pequeño"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/comparison/example/2",
+        "cy/base-2/vocabulary/v-comparison-2",
+        "cy/reference/grammar/cy-base-2-comparison",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-618ee0134cca9aae",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Mae'n well gen i de",
+      "translations": [
+        "Prefiero té"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/comparison/example/3",
+        "cy/base-2/vocabulary/v-comparison-3",
+        "cy/reference/grammar/cy-base-2-comparison",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-7d1af69c0c54ecf0",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n sâl",
+      "translations": [
+        "Estoy enfermo/a"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/health/example/1",
+        "cy/base-2/vocabulary/v-health-1",
+        "cy/base-2/phrases/p-health",
+        "cy/reference/grammar/cy-base-2-health",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-0df70ebf9d5aa949",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Mae pen tost gyda fi",
+      "translations": [
+        "Tengo dolor de cabeza"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/health/example/2",
+        "cy/base-2/vocabulary/v-health-2",
+        "cy/reference/grammar/cy-base-2-health",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-5140ceec4b421fad",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i angen meddyg",
+      "translations": [
+        "Necesito un médico"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/health/example/3",
+        "cy/base-2/vocabulary/v-health-3",
+        "cy/reference/grammar/cy-base-2-health",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-f6880bafb61e5080",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Wyt ti eisiau dod?",
+      "translations": [
+        "¿Querés venir?"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/arrangements/example/1",
+        "cy/base-2/vocabulary/v-arrangements-1",
+        "cy/base-2/phrases/p-arrangements",
+        "cy/reference/grammar/cy-base-2-arrangements",
+        "cy/reference/vocabulary/cy-base-2-expressions",
+        "cy/daily/cy-base-2-arrangements",
+        "cy/daily/cy-base-2-arrangements/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-9a61a399d784a99e",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i ddim yn gallu dod",
+      "translations": [
+        "No puedo ir"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/arrangements/example/2",
+        "cy/base-2/vocabulary/v-arrangements-2",
+        "cy/reference/grammar/cy-base-2-arrangements",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-84f12df5bba7391a",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Mae'n ddrwg gen i",
+      "translations": [
+        "Lo siento"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/arrangements/example/3",
+        "cy/base-2/vocabulary/v-arrangements-3",
+        "cy/reference/grammar/cy-base-2-arrangements",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-8c55297b9383986b",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n aros achos dw i'n flinedig",
+      "translations": [
+        "Me quedo porque estoy cansado/a"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/reasons/example/1",
+        "cy/base-2/vocabulary/v-reasons-1",
+        "cy/base-2/phrases/p-reasons",
+        "cy/reference/grammar/cy-base-2-reasons",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-1654d077de04a081",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i'n hoffi te ond dw i ddim yn hoffi coffi",
+      "translations": [
+        "Me gusta el té pero no me gusta el café"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/reasons/example/2",
+        "cy/base-2/vocabulary/v-reasons-2",
+        "cy/reference/grammar/cy-base-2-reasons",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-3a5de9df4cea8807",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Bwyta yn gyntaf, wedyn darllen",
+      "translations": [
+        "Comer primero, después leer"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/reasons/example/3",
+        "cy/base-2/vocabulary/v-reasons-3",
+        "cy/reference/grammar/cy-base-2-reasons",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-cdf6bcde57e29e29",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Es i i Gaerdydd ddoe",
+      "translations": [
+        "Ayer fui a Cardiff"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/messages/example/1",
+        "cy/base-2/vocabulary/v-messages-1",
+        "cy/base-2/phrases/p-messages",
+        "cy/reference/grammar/cy-base-2-messages",
+        "cy/reference/vocabulary/cy-base-2-expressions",
+        "cy/daily/cy-base-2-messages",
+        "cy/daily/cy-base-2-messages/example"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-03fe4b9429986609",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i gartref heddiw",
+      "translations": [
+        "Hoy estoy en casa"
+      ],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/lesson/messages/example/2",
+        "cy/base-2/vocabulary/v-messages-2",
+        "cy/reference/grammar/cy-base-2-messages",
+        "cy/reference/vocabulary/cy-base-2-expressions"
+      ],
+      "priority": 1,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-3f97a56cea1c9450",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Roeddwn i'n flinedig ddoe. Es i adref. Dw i wedi bwyta.",
+      "translations": [],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/scenario/transfer-1"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-2a632bd44b3b829f",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Dw i wedi bwyta. Bydda i'n gweithio yfory. Allwch chi helpu.",
+      "translations": [],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/scenario/transfer-2"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-38c66cd1c12d1d9c",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "tŷ mawr. Mae hwn yn fwy. Dw i'n sâl.",
+      "translations": [],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/scenario/transfer-3"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    },
+    {
+      "id": "cy-73d0b44b1040788f",
+      "language": "cy",
+      "locale": "cy-GB",
+      "text": "Wyt ti eisiau dod. Dw i'n aros achos dw i'n flinedig. Es i i Gaerdydd ddoe.",
+      "translations": [],
+      "levels": [
+        "A2"
+      ],
+      "sources": [
+        "cy/base-2/scenario/transfer-4"
+      ],
+      "priority": 2,
+      "kind": "frase",
+      "reviewStatus": "pendiente de revisión docente"
+    }
+  ]
+}

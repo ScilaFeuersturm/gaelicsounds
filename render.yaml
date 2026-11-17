@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: scottish-gaelic-tts
+    env: docker
+    plan: starter
+    region: oregon
+    healthCheckPath: /health
+    disk:
+      name: gaelic-audio-cache
+      mountPath: /app/audio_cache
+      sizeGB: 1
+    envVars:
+      - key: AUDIO_CACHE_DIR
+        value: /app/audio_cache
